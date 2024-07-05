@@ -14,6 +14,7 @@ import SignUpPage from './pages/SignUpPage.js';
 import StudyListPage from './pages/StudyListPage.js';
 import MyBooksPage from './pages/MyBooksPage.js';
 import BookPreviewPage from './pages/BookPreviewPage.js';
+import DownloadsPage from './pages/DownloadsPage.js';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/StudyListPage" element={<StudyListPage />} />
         <Route path="/MyBooksPage" element={<MyBooksPage />} />
         <Route path="/BookPreviewPage" element={<BookPreviewPage />} />
+        <Route path="/DownloadsPage" element={<DownloadsPage />} />
 
 
         <Route path="/institutes" element={<Institutes />} />

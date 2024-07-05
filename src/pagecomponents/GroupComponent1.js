@@ -18,7 +18,7 @@ const GroupComponent1 = ({
 
   return (
     <div
-      className={`w-[455px]  !m-[0] absolute bottom-[540px] left-[91px] rounded-xl bg-gray-400 flex flex-col items-start justify-start pt-0 px-0 pb-[46px] box-border gap-[22px] max-w-full z-[2] text-left text-11xl text-gray-300 font-poppins ${className}`}
+      className={`w-[455px]  !m-[0] absolute bottom-[540px] left-[91px] rounded-xl bg-transparent flex flex-col items-start justify-start pt-0 px-0 pb-[46px] box-border gap-[22px] max-w-full z-[2] text-left text-11xl text-gray-300 font-poppins ${className}`}
       style={groupDivStyle}
     >
       <div className="self-stretch h-[455px] relative rounded-xl bg-gray-400 hidden" />
@@ -35,7 +35,7 @@ const GroupComponent1 = ({
               Ahmedabad University
             </div>
           </div>
-          <p className="m-0 self-stretch relative text-mini leading-[22px] font-medium text-darkslategray-300 z-[1]">
+          <p className="m-0 self-stretch relative text-mini leading-[22px] font-medium text-black z-[1]">
             Ahmedabad University is located in Sector 14 and Sector 25 of
             Ahmedabad, spreading across an area of almost 550 acres.
           </p>

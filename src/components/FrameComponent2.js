@@ -7,6 +7,7 @@ import institutes from "../pages/Institutes";
 import { useLocation } from "react-router-dom";
 import StudyListPage from "../pages/StudyListPage";
 import MyBooksPage from "../pages/MyBooksPage";
+import DownloadsPage from "../pages/DownloadsPage";
 
 const FrameComponent2 = ({ className = "" }) => {
   const navigate = useNavigate();
@@ -26,6 +27,11 @@ const FrameComponent2 = ({ className = "" }) => {
   const onMyBooks = useCallback(() => {
     
     navigate("/MyBooksPage");
+  },[navigate]);
+
+
+  const onDownloads = useCallback(() => {
+    navigate("/DownloadsPage");
   },[navigate]);
 
   const onInstituesTextClick = useCallback(() => {
@@ -136,7 +142,9 @@ const FrameComponent2 = ({ className = "" }) => {
           >
             <div className="mr-2">📚</div> My Books
           </a>
-          <a className="flex items-center mb-12 cursor-pointer text-xl hover:underline">
+          <a className="flex items-center mb-12 cursor-pointer text-xl hover:underline"
+          onClick={onDownloads}
+          >
             <div className="mr-2">⬇️</div> Downloads
           </a>
           <a className="flex items-center cursor-pointer text-xl hover:underline">
