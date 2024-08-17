@@ -16,29 +16,26 @@ import MyBooksPage from './pages/MyBooksPage.js';
 import BookPreviewPage from './pages/BookPreviewPage.js';
 import DownloadsPage from './pages/DownloadsPage.js';
 
-
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/hero" element={<Hero />} />
-        <Route path="/frame-component-1" element={<FrameComponent1 />} />
-        <Route path="/component" element={<Component />} />
-        <Route path="/frame-component" element={<FrameComponent />} />
+        <Route path='/' element={<HomePage />} />
         {/* <Route path="/UniversityPage" element = {<UniversityPage />} /> */}
-        <Route path="/university/:name" element={<UniversityPage />} />
-        <Route path='/CoursePreviewPage' element={<CoursePreviewPage />}></Route>
-        <Route path="/SavebuttonComp" element={<SavebuttonComp />} />
-        <Route path="/SignUpPage" element={<SignUpPage />} />
-        <Route path="/StudyListPage" element={<StudyListPage />} />
-        <Route path="/MyBooksPage" element={<MyBooksPage />} />
-        <Route path="/BookPreviewPage" element={<BookPreviewPage />} />
-        <Route path="/DownloadsPage" element={<DownloadsPage />} />
+        <Route path='/university/:name' element={<UniversityPage />} />
+        <Route
+          path='/CoursePreviewPage'
+          element={<CoursePreviewPage />}
+        ></Route>
+        <Route path='/SavebuttonComp' element={<SavebuttonComp />} />
+        <Route path='/SignUpPage' element={<SignUpPage />} />
+        <Route path='/StudyListPage' element={<StudyListPage />} />
+        <Route path='/MyBooksPage' element={<MyBooksPage />} />
+        <Route path='/BookPreviewPage' element={<BookPreviewPage />} />
+        <Route path='/DownloadsPage' element={<DownloadsPage />} />
 
-
-        <Route path="/institutes" element={<Institutes />} />
-        <Route path="/AddYourUni" element={<AddYourUni />} />
+        <Route path='/institutes' element={<Institutes />} />
+        <Route path='/AddYourUni' element={<AddYourUni />} />
       </Routes>
     </Router>
   );
